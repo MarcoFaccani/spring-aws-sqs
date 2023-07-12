@@ -1,0 +1,29 @@
+
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: aws-s3-demo
+  cloud:
+    aws:
+      region:
+        static: ${AWS_REGION:eu-west-3} # paris
+      credentials:
+        accessKey: ${AWS_ACCESS_KEY}
+        secretKey: ${AWS_SECRET_KEY}
+
+app:
+  aws:
+    sqs:
+      queue-name: ${AWS_QUEUE_NAME:DummyQueueName}
+    ses:
+      sender: ${AWS_SES_SENDER:marcofaccani@protonmail.com}
+
+
+logging:
+  level:
+    com.marcofaccani.awssqs: DEBUG
+    io.awspring.cloud.sqs.listener: DEBUG
+
+

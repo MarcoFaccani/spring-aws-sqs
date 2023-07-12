@@ -1,0 +1,9 @@
+{
+  "transactionId": "1234567",
+  "recipientFullName": "Super Mario",
+  "recipientEmail": "yourValidEmail@gmail.com",
+  "recipientIban": "IT0238327827820181234",
+  "amount": 100,
+  "currency": "EUR",
+  "description": "Happy Birthday!"
+}
